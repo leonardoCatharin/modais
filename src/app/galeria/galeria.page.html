@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Fotos </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-align-items-center">
+    <ion-col size="6" *ngFor="let foto of fotos; let ix = index" class="col-img">
+      <ion-img class="img-galeria" width="100%" height="100%" [src]="pathImgs + foto.imagem" (click)="showAction(ix)"></ion-img>
+      <ion-icon *ngIf="foto.favorito" class="fav-icon" name="star"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-content>

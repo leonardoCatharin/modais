@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'simplemodal',
     loadChildren: () => import('./simplemodal/simplemodal.module').then( m => m.SimplemodalPageModule)
   },
+  {
+    path: 'galeria',
+    loadChildren: () => import('./galeria/galeria.module').then( m => m.GaleriaPageModule)
+  },
 ];
 
 @NgModule({
