@@ -1,0 +1,7 @@
+{
+  "name": "modais",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

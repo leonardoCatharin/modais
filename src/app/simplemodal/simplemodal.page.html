@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Modal Simples </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- cards utilizados apenas para ilustrar os dados do produto -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle> {{ produto.valor }} </ion-card-subtitle>
+      <ion-card-title>{{ produto.titulo }}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Não há descrição
+    </ion-card-content>
+  </ion-card>
+
+  <!-- botão utilizado para chamar o método responsável por fechar o modal -->
+  <ion-button color="warning" expand="full" (click)="dismiss()"> FECHAR </ion-button>
+
+</ion-content>
